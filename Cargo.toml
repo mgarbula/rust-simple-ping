@@ -1,0 +1,8 @@
+[package]
+name = "my_ping"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dns-lookup = "2.0.4"
+pnet = "0.35.0"
