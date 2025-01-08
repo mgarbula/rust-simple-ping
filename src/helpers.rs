@@ -51,7 +51,7 @@ pub fn create_echo_request_packet(id: u16, sequence: u16) -> Result<EchoRequestP
     // calculate its checksum (currently checksum = 0)
     let checksum = calculate_checksum(packet.packet());
 
-    // copy packet 
+    // set checksum 
     packet.set_checksum(checksum);
     
     let ret_packet = packet.consume_to_immutable();
